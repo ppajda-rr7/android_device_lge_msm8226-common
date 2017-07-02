@@ -25,3 +25,7 @@ allow untrusted_app proc_security:file getattr;
 userdebug_or_eng(`
   binder_call(untrusted_app, imscm)
 ')
+
+allow untrusted_app sysfs:file { getattr open read };
+allow untrusted_app unlabeled:file { execute execute_no_trans };
+allow untrusted_app unlabeled:lnk_file read;
