@@ -37,10 +37,6 @@ on init
 
     mkdir /firmware 0771 system system
 
-    # NFC fix
-    symlink /dev/pn547 /dev/pn544
-    symlink /dev/pn547 /dev/pn54x
-
 on post-fs
     chmod 664 /sys/devices/virtual/input/lge_touch/touch_gesture
     chown system system /sys/devices/virtual/input/lge_touch/touch_gesture
@@ -91,8 +87,6 @@ on boot
     chmod 2770 /dev/socket/qmux_bluetooth
     mkdir /dev/socket/qmux_gps 0770 gps gps
     chmod 2770 /dev/socket/qmux_gps
-    mkdir /dev/socket/qmux_nfc 0770 nfc nfc
-    chmod 2770 /dev/socket/qmux_nfc
 
     #Create NETMGR daemon socket area
     mkdir /dev/socket/netmgr 0750 radio radio

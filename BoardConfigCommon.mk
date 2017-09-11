@@ -104,7 +104,6 @@ endif
 # Nfc
 ifeq ($(BOARD_HAS_NFC),true)
 BOARD_NFC_CHIPSET := pn547
-BOARD_NFC_DEVICE := "/dev/pn547"
 endif
 
 # Lights

@@ -186,8 +186,8 @@
 /dev/wcnss_ctrl           0660   system     system
 
 #nfc permissions
-/dev/nfc-nci              0660    nfc         nfc
-/dev/pn547                0660    nfc         nfc
+/dev/pn547                0660   nfc        nfc
+/dev/pn544                0660   nfc        nfc
 
 # UIO devices
 /dev/uio0                 0660   system     system
